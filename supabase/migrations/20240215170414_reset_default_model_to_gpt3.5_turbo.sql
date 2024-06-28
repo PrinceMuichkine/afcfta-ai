@@ -1,27 +1,27 @@
 -- WORKSPACES
 
 UPDATE workspaces
-SET default_model = 'gpt-3.5-turbo';
+SET default_model = 'gpt-4-turbo';
 
 -- PRESETS
 
 UPDATE presets
-SET model = 'gpt-3.5-turbo';
+SET model = 'gpt-4-turbo';
 
 -- ASSISTANTS
 
 UPDATE assistants
-SET model = 'gpt-3.5-turbo';
+SET model = 'gpt-4-turbo';
 
 -- CHATS
 
 UPDATE chats
-SET model = 'gpt-3.5-turbo';
+SET model = 'gpt-4-turbo';
 
 -- MESSAGES
 
 UPDATE messages
-SET model = 'gpt-3.5-turbo';
+SET model = 'gpt-4-turbo';
 
 -- PROFILES
 
@@ -68,7 +68,7 @@ BEGIN
         TRUE,
         'Home',
         4096,
-        'gpt-3.5-turbo', -- Updated default model
+        'gpt-4-turbo', -- Updated default model
         'You are a friendly, helpful AI assistant.',
         0.5,
         'My home workspace.',

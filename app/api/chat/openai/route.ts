@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       temperature: chatSettings.temperature,
       max_tokens: ["gpt-4-turbo", "gpt-4o"].includes(chatSettings.model)
         ? 4096
-        : null, // TODO: Fix
+        : undefined, // Fix: Use undefined instead of null
       stream: true
     })
 

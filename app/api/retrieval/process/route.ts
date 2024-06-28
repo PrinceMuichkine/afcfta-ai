@@ -67,7 +67,7 @@ export async function POST(req: Request) {
     if (chunks.length === 0) {
       if (fileExtension === "pdf") {
         return createErrorResponse(
-          "No text content found in PDF. If your PDF file contains images or screenshots, process those images with models like GPT-4o, or Google 1.5 Pro.",
+          "No text content found in PDF. If your PDF file contains images or screenshots, process those images with models like ChatGPT 4o",
           400
         )
       }

@@ -32,8 +32,8 @@ export async function GET(request: NextRequest) {
     )
 
     const { error } = await supabase.auth.verifyOtp({
-      type,
-      token_hash
+      token_hash,
+      type
     })
     if (!error) {
       return NextResponse.redirect(redirectTo)

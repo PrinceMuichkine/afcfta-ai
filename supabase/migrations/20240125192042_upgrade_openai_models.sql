@@ -1,52 +1,52 @@
 -- WORKSPACES
 
 UPDATE workspaces
-SET default_model = 'gpt-4-turbo-preview'
-WHERE default_model = 'gpt-4-1106-preview';
+SET default_model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE default_model = 'gpt-4-turbo';
 
 UPDATE workspaces
-SET default_model = 'gpt-3.5-turbo'
-WHERE default_model = 'gpt-3.5-turbo-1106';
+SET default_model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE default_model = 'gpt-4-turbo';
 
 -- PRESETS
 
 UPDATE presets
-SET model = 'gpt-4-turbo-preview'
-WHERE model = 'gpt-4-1106-preview';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 UPDATE presets
-SET model = 'gpt-3.5-turbo'
-WHERE model = 'gpt-3.5-turbo-1106';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 -- ASSISTANTS
 
 UPDATE assistants
-SET model = 'gpt-4-turbo-preview'
-WHERE model = 'gpt-4-1106-preview';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 UPDATE assistants
-SET model = 'gpt-3.5-turbo'
-WHERE model = 'gpt-3.5-turbo-1106';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 -- CHATS
 
 UPDATE chats
-SET model = 'gpt-4-turbo-preview'
-WHERE model = 'gpt-4-1106-preview';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 UPDATE chats
-SET model = 'gpt-3.5-turbo'
-WHERE model = 'gpt-3.5-turbo-1106';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 -- MESSAGES
 
 UPDATE messages
-SET model = 'gpt-4-turbo-preview'
-WHERE model = 'gpt-4-1106-preview';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 UPDATE messages
-SET model = 'gpt-3.5-turbo'
-WHERE model = 'gpt-3.5-turbo-1106';
+SET model = 'gpt-4-turbo'  -- Changed to gpt-4-turbo
+WHERE model = 'gpt-4-turbo';
 
 -- PROFILES
 
@@ -93,7 +93,7 @@ BEGIN
         TRUE,
         'Home',
         4096,
-        'gpt-4-turbo-preview', -- Updated default model
+        'gpt-4-turbo', -- Updated default model
         'You are a friendly, helpful AI assistant.',
         0.5,
         'My home workspace.',
