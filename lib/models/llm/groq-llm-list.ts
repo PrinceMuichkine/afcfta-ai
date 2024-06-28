@@ -66,9 +66,4 @@ const META_LLAMA_3_70B_8192: LLM = {
   }
 }
 
-export const GROQ_LLM_LIST: LLM[] = [
-  // LLaMA2_70B,
-  MIXTRAL_8X7B,
-  META_LLAMA_3_8B_8192,
-  META_LLAMA_3_70B_8192
-]
+export const GROQ_LLM_LIST: LLM[] = []

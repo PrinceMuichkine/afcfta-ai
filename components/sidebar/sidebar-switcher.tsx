@@ -46,51 +46,44 @@ export const SidebarSwitcher: FC<SidebarSwitcherProps> = ({
           contentType="chats"
           onContentTypeChange={onContentTypeChange}
         />
-
         {/*<SidebarSwitchItem*/}
         {/*  icon={<IconAdjustmentsHorizontal size={SIDEBAR_ICON_SIZE} />}*/}
         {/*  contentType="presets"*/}
         {/*  onContentTypeChange={onContentTypeChange}*/}
         {/*/>*/}
-
-        <SidebarSwitchItem
+        {/* <SidebarSwitchItem
           icon={<IconTerminal2 size={SIDEBAR_ICON_SIZE} stroke={1.5} />}
           contentType="prompts"
           onContentTypeChange={onContentTypeChange}
-        />
-
+        /> */}
         {/*<SidebarSwitchItem*/}
         {/*  icon={<IconSparkles size={SIDEBAR_ICON_SIZE} />}*/}
         {/*  contentType="models"*/}
         {/*  onContentTypeChange={onContentTypeChange}*/}
         {/*/>*/}
-
         <SidebarSwitchItem
           icon={<IconFile size={SIDEBAR_ICON_SIZE} stroke={1.5} />}
           contentType="files"
           onContentTypeChange={onContentTypeChange}
         />
-
         {/*<SidebarSwitchItem*/}
         {/*  icon={<IconBooks size={SIDEBAR_ICON_SIZE} />}*/}
         {/*  contentType="collections"*/}
         {/*  onContentTypeChange={onContentTypeChange}*/}
         {/*/>*/}
-
         <SidebarSwitchItem
           icon={<IconRobotFace size={SIDEBAR_ICON_SIZE} stroke={1.5} />}
           contentType="assistants"
           onContentTypeChange={onContentTypeChange}
         />
-
+        {/* 
         <SidebarSwitchItem
           icon={<IconPuzzle size={SIDEBAR_ICON_SIZE} stroke={1.5} />}
           contentType="tools"
           name="Plugins"
           onContentTypeChange={onContentTypeChange}
-        />
-
-        <WithTooltip
+        /> */}
+        {/* <WithTooltip
           display={"Split Screen"}
           asChild
           trigger={
@@ -106,30 +99,10 @@ export const SidebarSwitcher: FC<SidebarSwitcherProps> = ({
             </Button>
           }
         />
+     */}{" "}
       </TabsList>
 
       <div className="flex flex-col items-center space-y-4">
-        {/* TODO */}
-        {/* <WithTooltip display={<div>Import</div>} trigger={<Import />} /> */}
-
-        {/* TODO */}
-        {/* <Alerts /> */}
-        {!validateProPlan(profile) && (
-          <WithTooltip
-            display={
-              <div>Upgrade to paid plans to get access to all features.</div>
-            }
-            trigger={
-              <IconDiamondFilled
-                onClick={() => setIsPaywallOpen(true)}
-                className="cursor-pointer pt-[4px] text-violet-700 hover:opacity-50"
-                stroke={1.5}
-                size={SIDEBAR_ICON_SIZE}
-              />
-            }
-          />
-        )}
-
         <WithTooltip
           display={<div>Profile Settings</div>}
           trigger={<ProfileSettings />}

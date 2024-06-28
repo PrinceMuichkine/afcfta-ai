@@ -8,7 +8,7 @@ import { GoogleSVG } from "@/components/icons/google-svg"
 import { useState } from "react"
 import { useTheme } from "next-themes"
 import { Input } from "@/components/ui/input"
-import { IconMail } from "@tabler/icons-react"
+import { IconMail, IconAlertCircle } from "@tabler/icons-react" // Import the alert icon
 import { Separator } from "@/components/ui/separator"
 
 export default function LoginForm() {
@@ -59,7 +59,7 @@ export default function LoginForm() {
   return (
     <form className="animate-in text-foreground flex w-full flex-col justify-center gap-2">
       <Brand theme={theme === "dark" ? "dark" : "light"} />
-
+      {/* 
       <Button
         disabled={disabled}
         onClick={() => handleOAuthLogin("google")}
@@ -73,7 +73,7 @@ export default function LoginForm() {
         <Separator className={"flex-1"} />
         <div>or</div>
         <Separator className={"flex-1"} />
-      </div>
+      </div> */}
 
       <Input
         disabled={disabled}
@@ -81,7 +81,7 @@ export default function LoginForm() {
         value={email}
         onChange={e => setEmail(e.target.value)}
         className="rounded-lg"
-        placeholder={"sama@openai.com"}
+        placeholder={"masego.maika@au-afcfta.org"}
       />
       <Button
         disabled={disabled}
@@ -92,6 +92,11 @@ export default function LoginForm() {
         <IconMail height={20} width={20} stroke={1.5} className="mr-2" />
         Continue with email
       </Button>
+      {/* Add the centered alert line here */}
+      <div className="text-navy-600 mt-2 flex items-center justify-center text-xs">
+        <IconAlertCircle height={14} width={14} className="mr-1" />
+        Temporary and non-AU emails will not work.
+      </div>
     </form>
   )
 }

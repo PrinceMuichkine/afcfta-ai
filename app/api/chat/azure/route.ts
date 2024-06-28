@@ -29,11 +29,8 @@ export async function POST(request: Request) {
       case "gpt-3.5-turbo":
         DEPLOYMENT_ID = profile.azure_openai_35_turbo_id || ""
         break
-      case "gpt-4-turbo-preview":
+      case "gpt-4-turbo":
         DEPLOYMENT_ID = profile.azure_openai_45_turbo_id || ""
-        break
-      case "gpt-4-vision-preview":
-        DEPLOYMENT_ID = profile.azure_openai_45_vision_id || ""
         break
       default:
         return new Response(JSON.stringify({ message: "Model not found" }), {
@@ -61,7 +58,7 @@ export async function POST(request: Request) {
       model: DEPLOYMENT_ID as ChatCompletionCreateParamsBase["model"],
       messages: messages as ChatCompletionCreateParamsBase["messages"],
       temperature: chatSettings.temperature,
-      max_tokens: chatSettings.model === "gpt-4-vision-preview" ? 4096 : null, // TODO: Fix
+      max_tokens: chatSettings.model === "gpt-4-turbo" ? 4096 : null, // TODO: Fix
       stream: true
     })
 

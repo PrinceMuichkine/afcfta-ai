@@ -26,9 +26,7 @@ import { WithTooltip } from "@/components/ui/with-tooltip"
 import { updateWorkspace } from "@/db/workspaces"
 
 export const DEFAULT_MODEL_VISIBILITY: Record<LLMID, boolean> = {
-  "gpt-3.5-turbo-0125": true,
-  "gpt-4-vision-preview": false,
-  "gpt-4-turbo-preview": false,
+  "gpt-3.5-turbo": false,
   "gpt-4-turbo": true,
   "claude-3-haiku-20240307": true,
   "claude-3-sonnet-20240229": false,
@@ -42,8 +40,6 @@ export const DEFAULT_MODEL_VISIBILITY: Record<LLMID, boolean> = {
   "sonar-medium-online": true,
   "sonar-small-chat": false,
   "sonar-medium-chat": false,
-  "gpt-4": false,
-  "gpt-3.5-turbo": false,
   "gemini-1.5-pro-latest": true,
   "claude-2.1": false,
   "claude-instant-1.2": false,
@@ -63,16 +59,17 @@ export const DEFAULT_MODEL_VISIBILITY: Record<LLMID, boolean> = {
   "llama3-70b-8192": false,
   "llama3-8b-8192": false,
   "gpt-4o": true,
-  "gemini-1.5-flash-latest": true
+  "gemini-1.5-flash-latest": true,
+  "gpt-4-turbo-preview": false
 }
 
 const SYSTEM_PROMPT_DESCRIPTION = `
 The system prompt is a message that the AI will use to start the conversation. 
-It should contain the following dynamic variables for ChatLabs functioning properly: {profile_context}, {local_date}, and {assistant}. {profile_context} is the user's profile context, {local_date} is the current date, and {assistant} is the name of the assistant and it's instructions.
+It should contain the following dynamic variables for Afcfta.ai functioning properly: Instructions, {profile_context}, {local_date}, and {assistant}. {profile_context} is the user's profile context, {local_date} is the current date.
 `
 
 const SYSTEM_PROMPT_WARNING = `
-The system prompt should contain the following dynamic variables for ChatLabs functioning properly: {profile_context}, {local_date}, and {assistant}. {profile_context} is the user's profile context, {local_date} is the current date, and {assistant} is the name of the assistant and it's instructions.`
+The system prompt should contain the following dynamic variables for Afcfta.ai functioning properly: Instructions, {profile_context}, {local_date}, and {assistant}. {profile_context} is the user's profile context, {local_date} is the current date.`
 
 function ModelSettings({ models }: { models?: LLM[] }) {
   const {

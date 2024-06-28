@@ -446,10 +446,10 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                 </div>
 
                 <div className="space-y-1">
-                  <Label>Chat Display Name</Label>
+                  <Label>Your name</Label>
 
                   <Input
-                    placeholder="Chat display name..."
+                    placeholder="Masego"
                     value={displayName}
                     onChange={e => setDisplayName(e.target.value)}
                     maxLength={PROFILE_DISPLAY_NAME_MAX}
@@ -457,15 +457,12 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                 </div>
 
                 <div className="space-y-1">
-                  <Label className="text-sm">
-                    What would you like the AI to know about you to provide
-                    better responses?
-                  </Label>
+                  <Label className="text-sm">Instructions</Label>
 
                   <TextareaAutosize
                     value={profileInstructions}
                     onValueChange={setProfileInstructions}
-                    placeholder="Profile context... (optional)"
+                    placeholder="What would you like the AI to know about you to provide better responses?"
                     minRows={6}
                     maxRows={10}
                   />
@@ -475,7 +472,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                     limit={PROFILE_CONTEXT_MAX}
                   />
                 </div>
-                <div className={"space-y-1"}>
+                {/* <div className={"space-y-1"}>
                   {profile.plan != PLAN_FREE ? (
                     <Button
                       className={"w-full"}
@@ -494,8 +491,8 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                     >
                       Upgrade
                     </Button>
-                  )}
-                </div>
+                  )} */}
+                {/* </div> */}
               </form>
             </TabsContent>
 
@@ -861,7 +858,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
             <WithTooltip
               display={
                 <div>
-                  Download ChatLabs 1.0 data as JSON. Import coming soon!
+                  Download your data as a JSON file. Import coming soon!
                 </div>
               }
               trigger={

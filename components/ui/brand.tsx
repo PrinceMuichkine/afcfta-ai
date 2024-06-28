@@ -1,7 +1,7 @@
 "use client"
 
 import { FC } from "react"
-import { ChatbotUISVG } from "../icons/chatbotui-svg"
+import Image from "next/image" // Import the Image component from next/image
 
 interface BrandProps {
   theme?: "dark" | "light"
@@ -10,15 +10,25 @@ interface BrandProps {
 export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
   return (
     <div className="flex cursor-pointer flex-col items-center">
-      <div className="mb-2">
-        <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
-      </div>
+      <a href="https://au-afcfta.org" className="mb-2">
+        {" "}
+        {/* Add anchor tag around the Image */}
+        <Image
+          src="/DARK_BRAND_LOGO.png" // Path to your logo in the public folder
+          alt="Brand Logo"
+          width={110} // Set the width of the image
+          height={110} // Set the height of the image
+        />
+      </a>
 
-      <h1 className="text-4xl font-semibold tracking-wide">ChatLabs</h1>
+      <a href="https://au-afcfta.org">
+        {" "}
+        {/* Add anchor tag around the text */}
+        <h1 className="text-4xl font-semibold tracking-wide">AfCFTA.ai</h1>
+      </a>
       <div className="flex flex-col items-center py-2">
-        <h4 className="text-sm">More than 30 AI models in one place.</h4>
         <h4 className="text-sm">
-          Featuring GPT-4o, Claude 3, Gemini Pro, and LLaMa 3.
+          The AI-Powered Chatbot of the AfCFTA Secretariat.
         </h4>
       </div>
     </div>

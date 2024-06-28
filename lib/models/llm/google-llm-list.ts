@@ -46,9 +46,4 @@ const GEMINI_15_FLASH: LLM = {
   paid: false
 }
 
-export const GOOGLE_LLM_LIST: LLM[] = [
-  GEMINI_PRO,
-  GEMINI_PRO_VISION,
-  GEMINI_PRO_15,
-  GEMINI_15_FLASH
-]
+export const GOOGLE_LLM_LIST: LLM[] = []

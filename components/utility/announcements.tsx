@@ -148,7 +148,8 @@ export const Announcements: FC<AnnouncementsProps> = () => {
                 </Button>
               ) : (
                 <div className="text-muted-foreground text-sm leading-snug">
-                  You are all caught up!
+                  This is afcfta.ai v2 — very grateful for all your feedbacks.
+                  Python interpreter coming in v3.
                   {announcements.length > 0 && (
                     <div
                       className="mt-6 cursor-pointer underline"

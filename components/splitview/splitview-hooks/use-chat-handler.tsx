@@ -174,22 +174,21 @@ export const useChatHandler = () => {
           | "local"
       })
     } else if (selectedWorkspace) {
-      // setChatSettings({
-      //   model: (selectedWorkspace.default_model ||
-      //     "gpt-4-1106-preview") as LLMID,
-      //   prompt:
-      //     selectedWorkspace.default_prompt ||
-      //     "You are a friendly, helpful AI assistant.",
-      //   temperature: selectedWorkspace.default_temperature || 0.5,
-      //   contextLength: selectedWorkspace.default_context_length || 4096,
-      //   includeProfileContext:
-      //     selectedWorkspace.include_profile_context || true,
-      //   includeWorkspaceInstructions:
-      //     selectedWorkspace.include_workspace_instructions || true,
-      //   embeddingsProvider:
-      //     (selectedWorkspace.embeddings_provider as "openai" | "local") ||
-      //     "openai"
-      // })
+      setChatSettings({
+        model: (selectedWorkspace.default_model || "gpt-4-turbo") as LLMID,
+        prompt:
+          selectedWorkspace.default_prompt ||
+          "You are AFTA, a helpful assistant designed to enhance the productivity and efficiency of the African Continental Free Trade Area (AfCFTA) staff. Provide precise, actionable, and context-aware responses and recommendations to support users in their daily tasks and long-term goals. Maintain an approachable tone, and always prioritize conciseness, clarity, and relevance.",
+        temperature: selectedWorkspace.default_temperature || 0.5,
+        contextLength: selectedWorkspace.default_context_length || 4096,
+        includeProfileContext:
+          selectedWorkspace.include_profile_context || true,
+        includeWorkspaceInstructions:
+          selectedWorkspace.include_workspace_instructions || true,
+        embeddingsProvider:
+          (selectedWorkspace.embeddings_provider as "openai" | "local") ||
+          "openai"
+      })
     }
 
     return router.push(`/${selectedWorkspace.id}/chat`)
@@ -404,7 +403,7 @@ export const useChatHandler = () => {
         setIsPaywallOpen(true)
       }
       console.error(error)
-      setUserInput(startingInput)
+      setUserInput("")
     } finally {
       setIsGenerating(false)
       setFirstTokenReceived(false)

@@ -88,8 +88,9 @@ export const GlobalState: FC<GlobalStateProps> = ({ children }) => {
     }
 
     return {
-      model: "gpt-3.5-turbo-0125",
-      prompt: "You are a helpful AI assistant.",
+      model: "gpt-4-turbo",
+      prompt:
+        "You are AFTA, a helpful assistant designed to enhance the productivity and efficiency of the African Continental Free Trade Area (AfCFTA) staff. Provide precise, actionable, and context-aware responses and recommendations to support users in their daily tasks and long-term goals. Maintain an approachable tone, and always prioritize conciseness, clarity, and relevance.",
       temperature: 0.5,
       contextLength: 4000,
       includeProfileContext: true,

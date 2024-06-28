@@ -77,15 +77,14 @@ const PERPLEXITY_SONAR_MEDIUM_ONLINE_8x7B: LLM = {
   hostedId: "sonar-medium-online",
   platformLink: PERPLEXITY_PLATORM_LINK,
   imageInput: false,
-  paid: true
+  paid: false,
+  supportsStreaming: false,
+  pricing: {
+    currency: "USD",
+    unit: "1M tokens",
+    inputCost: 5,
+    outputCost: 10
+  }
 }
 
-export const PERPLEXITY_LLM_LIST: LLM[] = [
-  MIXTRAL_8X7B_INSTRUCT,
-  MISTRAL_7B_INSTRUCT,
-  CODELLAMA_70B_INSTRUCT,
-  PERPLEXITY_SONAR_SMALL_CHAT_7B,
-  PERPLEXITY_SONAR_SMALL_ONLINE_7B,
-  PERPLEXITY_SONAR_MEDIUM_CHAT_8x7B,
-  PERPLEXITY_SONAR_MEDIUM_ONLINE_8x7B
-]
+export const PERPLEXITY_LLM_LIST: LLM[] = [PERPLEXITY_SONAR_MEDIUM_ONLINE_8x7B]

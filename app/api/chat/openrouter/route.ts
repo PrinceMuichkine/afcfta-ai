@@ -30,8 +30,8 @@ export async function POST(request: Request) {
       baseURL: "https://openrouter.ai/api/v1",
       defaultHeaders: {
         "HTTP-Referer": `https://writingmate.ai/labs`,
-        "X-Title": `ChatLabs`,
-        "X-Description": `Chat with all best AI models in one place`
+        "X-Title": `Afcfta.ai`,
+        "X-Description": ``
       }
     })
 

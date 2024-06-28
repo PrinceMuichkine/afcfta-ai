@@ -176,7 +176,7 @@ export const QuickSettings: FC<QuickSettingsProps> = ({}) => {
         setSearch("")
       }}
     >
-      <DropdownMenuTrigger asChild className="max-w-1/2" disabled={loading}>
+      {/* <DropdownMenuTrigger asChild className="max-w-1/2" disabled={loading}>
         <Button variant="ghost" className="hidden space-x-3 text-lg sm:flex">
           {selectedPreset && (
             <ModelIcon
@@ -221,9 +221,9 @@ export const QuickSettings: FC<QuickSettingsProps> = ({}) => {
             </>
           )}
         </Button>
-      </DropdownMenuTrigger>
+      </DropdownMenuTrigger> */}
 
-      <DropdownMenuContent
+      {/* <DropdownMenuContent
         className="max-w-[calc(100vw-12px)] space-y-4 overflow-y-auto sm:min-w-[300px] sm:max-w-[500px]"
         align="start"
       >
@@ -291,7 +291,7 @@ export const QuickSettings: FC<QuickSettingsProps> = ({}) => {
             </div>
           </>
         )}
-      </DropdownMenuContent>
+      </DropdownMenuContent> */}
     </DropdownMenu>
   )
 }

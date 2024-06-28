@@ -94,26 +94,7 @@ export const ToolSelect: FC<ToolSelectProps> = ({
         setIsOpen(isOpen)
       }}
     >
-      <DropdownMenuTrigger>
-        <Button
-          ref={triggerRef}
-          className={cn(
-            "relative flex items-center justify-between space-x-0 border-0",
-            flash ? "animate-bounce" : "",
-            className
-          )}
-          variant="ghost"
-        >
-          <IconPuzzle />
-          <div
-            className={
-              "bg-foreground text-background absolute bottom-1 right-2 size-4 rounded-full text-xs font-semibold"
-            }
-          >
-            {selectedTools.length}
-          </div>
-        </Button>
-      </DropdownMenuTrigger>
+      <DropdownMenuTrigger></DropdownMenuTrigger>
 
       <DropdownMenuContent
         className="relative mx-2 -ml-[140px] flex max-h-[300px] overflow-auto p-2"

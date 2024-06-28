@@ -204,11 +204,11 @@ export default function WorkspaceLayout({ children }: WorkspaceLayoutProps) {
     setChatSettings({
       model: (chatSettings?.model ||
         workspace?.default_model ||
-        "gpt-3.5-turbo-0125") as LLMID,
+        "gpt-4-turbo") as LLMID,
       prompt:
         // chatSettings?.prompt ||
         workspace?.default_prompt ||
-        "You are a friendly, helpful AI assistant.",
+        "You are AFTA, a helpful assistant designed to enhance the productivity and efficiency of the African Continental Free Trade Area (AfCFTA) staff. Provide precise, actionable, and context-aware responses and recommendations to support users in their daily tasks and long-term goals. Maintain an approachable tone, and always prioritize conciseness, clarity, and relevance.",
       temperature:
         // chatSettings?.temperature ||
         workspace?.default_temperature || 0.5,
