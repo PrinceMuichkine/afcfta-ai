@@ -1,6 +1,6 @@
 # Afcfta.ai
 
-Afcfta.ai is 
+Afcfta.ai is the AI-powered chatbot of the AfCFTA Secretariat.
 
 Afcfta.ai is a fork of the [ChatbotUI](https://github.com/mckaywrigley/chatbot-ui) project.
 

@@ -31,7 +31,7 @@ export async function POST(request: Request) {
       defaultHeaders: {
         "HTTP-Referer": `https://au-afcfta.org`,
         "X-Title": `Afcfta.ai`,
-        "X-Description": ``
+        "X-Description": `Afcfta.ai is the AI-powered chatbot of the AfCFTA Secretariat.`
       }
     })
 

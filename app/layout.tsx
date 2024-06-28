@@ -18,7 +18,8 @@ const font = DM_Sans({ subsets: ["latin"] })
 const APP_NAME = "Afcfta.ai"
 const APP_DEFAULT_TITLE = "Afcfta.ai"
 const APP_TITLE_TEMPLATE = "%s - Afcfta.ai"
-const APP_DESCRIPTION = "Afcfta.ai is"
+const APP_DESCRIPTION =
+  "Afcfta.ai is the AI-powered chatbot of the AfCFTA Secretariat, designed to enhance productivity and streamline operational processes."
 
 interface RootLayoutProps {
   children: ReactNode
