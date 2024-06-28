@@ -27,9 +27,9 @@ export async function POST(request: Request) {
 
     const openai = new OpenAI({
       apiKey: profile.openrouter_api_key || "",
-      baseURL: "https://openrouter.ai/api/v1",
+      baseURL: "https://api.openai.com/v1",
       defaultHeaders: {
-        "HTTP-Referer": `https://writingmate.ai/labs`,
+        "HTTP-Referer": `https://au-afcfta.org`,
         "X-Title": `Afcfta.ai`,
         "X-Description": ``
       }

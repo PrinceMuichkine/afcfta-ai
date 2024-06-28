@@ -6,16 +6,15 @@ interface FinishStepProps {
 
 export const FinishStep: FC<FinishStepProps> = ({ displayName }) => {
   return (
-    <div className="space-y-3 text-center">
-      <div className="text-2xl font-bold text-gray-800">
+    <div>
+      <h1>
         Welcome to Afcfta.ai
-        {displayName.length > 0 ? `, ${displayName.split(" ")[0]}` : null}!
-      </div>
-
-      <div className="text-lg text-gray-600">
-        Click <span className="text-black-600 font-semibold">Next</span> to
-        start chatting.
-      </div>
+        {displayName ? `, ${displayName.split(" ")[0]}` : ""}!
+      </h1>
+      <br /> {/* This adds a smaller line separation */}
+      <p>
+        Click <strong>Next</strong> to start chatting.
+      </p>
     </div>
   )
 }
