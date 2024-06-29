@@ -3,12 +3,7 @@ import { ChatPayload, MessageImage } from "@/types"
 import { encode } from "gpt-tokenizer"
 import { CHAT_SETTING_LIMITS } from "@/lib/chat-setting-limits"
 
-export const DEFAULT_SYSTEM_PROMPT = `
-Today is {local_date}.
-User info: "{profile_context}", {assistant},
-You are AFTA, a helpful assistant designed to enhance the productivity and efficiency of the African Continental Free Trade Area (AfCFTA) staff.
-Provide precise, actionable, and context-aware responses and recommendations to support users in their daily tasks and long-term goals. Maintain an approachable tone, and always prioritize conciseness, clarity, and relevance.
-`
+export const DEFAULT_SYSTEM_PROMPT = `Today is {local_date}. User info: "{profile_context}", {assistant}, You are AFTA, a helpful assistant designed to enhance the productivity and efficiency of the African Continental Free Trade Area (AfCFTA) staff. Provide precise, actionable, and context-aware responses and recommendations to support users in their daily tasks and long-term goals. Maintain an approachable tone, and always prioritize conciseness, clarity, and relevance.`
 
 export function validateSystemPromptTemplate(template: string) {
   return (

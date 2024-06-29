@@ -44,7 +44,7 @@ export const ChatHelp: FC<ChatHelpProps> = ({}) => {
             </Link>
             <Link
               className="cursor-pointer hover:opacity-50"
-              href="https://www.linkedin.com/in/bmdiop"
+              href="https://linkedin.com/company/afcfta-secretariat"
               target="_blank"
               rel="noopener noreferrer"
             >
