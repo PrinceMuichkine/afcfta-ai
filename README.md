@@ -4,16 +4,6 @@ Afcfta.ai is the AI-powered chatbot of the AfCFTA Secretariat.
 
 Afcfta.ai is a fork of the [ChatbotUI](https://github.com/mckaywrigley/chatbot-ui) project.
 
-## Issues
-
-We restrict "Issues" to actual issues related to the codebase.
-
-We're getting excessive amounts of issues that amount to things like feature requests, cloud provider issues, etc.
-
-If you are having issues with things like setup, please refer to the "Help" section in the "Discussions" tab above.
-
-Issues unrelated to the codebase will likely be closed immediately.
-
 ## Updating
 
 In your terminal at the root of your local Afcfta.ai repository, run:
@@ -251,7 +241,3 @@ We've introduced a new feature that allows every user to access a set of platfor
 For adding or removing platform tools, consult the [platformToolsList.ts](./lib/platformTools/platformToolsList.ts) document.
 
 To introduce a new tool, utilize the `PlatformTool` interface and incorporate it into the aforementioned list. For a practical illustration, examine the [webScraperTool.ts](./lib/platformTools/library/webScraperTool.ts) example.
-
-## Contact
-
-Message Babacar on [Twitter/X](https://twitter.com/bm_diop)
