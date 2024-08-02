@@ -27,7 +27,7 @@ Follow these steps to get your own Afcfta.ai instance running locally.
 ### 1. Clone the Repo
 
 ```bash
-git clone 
+git clone https://github.com/PrinceMuichkine/afcfta.ai
 ```
 
 ### 2. Install Dependencies
